@@ -98,6 +98,7 @@ GameObject:
   - 33: {fileID: 30844471}
   - 64: {fileID: 30844470}
   - 23: {fileID: 30844469}
+  - 114: {fileID: 30844472}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -162,6 +163,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 30844467}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &30844472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 30844467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ad61edd3e58d349a2647933896cfc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 0
+  Name: 
+  SelectedObjectType: 1
 --- !u!1 &709131059
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +248,7 @@ GameObject:
   - 33: {fileID: 1101925999}
   - 65: {fileID: 1101925998}
   - 23: {fileID: 1101925997}
+  - 114: {fileID: 1101926000}
   m_Layer: 0
   m_Name: City
   m_TagString: Untagged
@@ -295,6 +311,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1101925995}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1101926000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1101925995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ad61edd3e58d349a2647933896cfc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 1
+  Name: Rome
+  SelectedObjectType: 2
 --- !u!1 &1321336001
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,6 +337,7 @@ GameObject:
   - 92: {fileID: 1321336004}
   - 124: {fileID: 1321336003}
   - 81: {fileID: 1321336002}
+  - 114: {fileID: 1321336007}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -380,6 +411,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1321336007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1321336001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e61d073c377b9b943a6943d8ae5325f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1710602759
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,6 +433,7 @@ GameObject:
   - 33: {fileID: 1710602762}
   - 65: {fileID: 1710602761}
   - 23: {fileID: 1710602760}
+  - 114: {fileID: 1710602764}
   m_Layer: 0
   m_Name: Farm
   m_TagString: Untagged
@@ -453,3 +496,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 30844468}
   m_RootOrder: 1
+--- !u!114 &1710602764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1710602759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ad61edd3e58d349a2647933896cfc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 2
+  Name: Rome Farm
+  SelectedObjectType: 3
