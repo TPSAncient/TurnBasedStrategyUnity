@@ -13,6 +13,25 @@ public class CameraManager : MonoBehaviour {
         SelectObject();
     }
 
+    private void Move() {
+        if (Input.GetKey(KeyCode.A)) {
+            // Move left
+        }
+        if (Input.GetKey(KeyCode.D)) { 
+            // Move Right
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            // Move Forward
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            // Move Backward
+        }
+
+    }
+
+
     private void SelectObject()
     {
         if (Input.GetKey(KeyCode.Mouse0))
