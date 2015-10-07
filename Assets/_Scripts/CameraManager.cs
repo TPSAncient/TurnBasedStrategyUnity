@@ -2,10 +2,6 @@
 
 public class CameraManager : MonoBehaviour
 {
-
-    public float XSensitivity = 2;
-    public float YSensitivity = 2;
-
     private Camera _mainCamera;
 
 
