@@ -7,59 +7,162 @@ public class CameraManager : MonoBehaviour
     public float XSensitivity = 2;
     public float YSensitivity = 2;
 
-    private Camera mainCamera;
-    
+    private Camera _mainCamera;
+
+
+    #region Unity Methods
+
     void Awake()
     {
-        mainCamera = Camera.main;
+        _mainCamera = Camera.main;
     }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        Move();
-        Look();
+    // Update is called once per frame
+    void Update()
+    {
+        MoveCamera();
+        RotateCamera();
+        KeyboardMoveCamera();
         SelectObject();
     }
 
-   
+    #endregion
 
-    private void Look()
+
+    private void ScrollCamera()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1))
-        {
-
-        }
         
     }
 
-    private void Move() {
+    private void MoveCamera()
+    {
+        float xpos = Input.mousePosition.x;
+        float ypos = Input.mousePosition.y;
+        Vector3 movement = new Vector3(0, 0, 0);
+
+        //horizontal camera movement
+        if (xpos >= 0 && xpos < ResourceManager.ScrollWidth)
+        {
+            movement.x -= ResourceManager.ScrollSpeed;
+        }
+        else if (xpos <= Screen.width && xpos > Screen.width - ResourceManager.ScrollWidth)
+        {
+            movement.x += ResourceManager.ScrollSpeed;
+        }
+
+        //vertical camera movement
+        if (ypos >= 0 && ypos < ResourceManager.ScrollWidth)
+        {
+            movement.z -= ResourceManager.ScrollSpeed;
+        }
+        else if (ypos <= Screen.height && ypos > Screen.height - ResourceManager.ScrollWidth)
+        {
+            movement.z += ResourceManager.ScrollSpeed;
+        }
+
+        //make sure movement is in the direction the camera is pointing
+        //but ignore the vertical tilt of the camera to get sensible scrolling
+        movement = _mainCamera.transform.TransformDirection(movement);
+        movement.y = 0;
+
+        //away from ground movement
+        movement.y -= ResourceManager.ScrollSpeed * Input.GetAxis("Mouse ScrollWheel");
+
+        //calculate desired camera position based on received input
+        Vector3 origin = _mainCamera.transform.position;
+        Vector3 destination = origin;
+        destination.x += movement.x;
+        destination.y += movement.y;
+        destination.z += movement.z;
+
+        //limit away from ground movement to be between a minimum and maximum distance
+        if (destination.y > ResourceManager.MaxCameraHeight)
+        {
+            destination.y = ResourceManager.MaxCameraHeight;
+        }
+        else if (destination.y < ResourceManager.MinCameraHeight)
+        {
+            destination.y = ResourceManager.MinCameraHeight;
+        }
+
+        //if a change in position is detected perform the necessary update
+        if (destination != origin)
+        {
+            _mainCamera.transform.position = Vector3.MoveTowards(origin, destination, Time.deltaTime * ResourceManager.ScrollSpeed);
+        }
+    }
+
+    private void RotateCamera()
+    {
+        Vector3 origin = _mainCamera.transform.eulerAngles;
+        Vector3 destination = origin;
+
+        //detect rotation amount if ALT is being held and the Right mouse button is down
+        if ((Input.GetKey(KeyCode.LeftAlt) || Input.GetKey(KeyCode.RightAlt)) && Input.GetMouseButton(1))
+        {
+            destination.x -= Input.GetAxis("Mouse Y") * ResourceManager.RotateAmount;
+            destination.y += Input.GetAxis("Mouse X") * ResourceManager.RotateAmount;
+        }
+
+        //if a change in position is detected perform the necessary update
+        if (destination != origin)
+        {
+            _mainCamera.transform.eulerAngles = Vector3.MoveTowards(origin, destination, Time.deltaTime * ResourceManager.RotateSpeed);
+        }
+    }
+    
+    private void KeyboardMoveCamera() {
+        Vector3 movement = new Vector3(0, 0, 0);
+
         if (Input.GetKey(KeyCode.A)) {
             // Move left
-            mainCamera.transform.Translate(Vector3.left);
+            movement.x -= ResourceManager.ScrollSpeed;
         }
+
         if (Input.GetKey(KeyCode.D)) {
             // Move Right
-            mainCamera.transform.Translate(Vector3.right);
+            movement.x += ResourceManager.ScrollSpeed;
         }
+
         if (Input.GetKey(KeyCode.W))
         {
             // Move Forward
-            mainCamera.transform.Translate(Vector3.forward);
+            movement.z += ResourceManager.ScrollSpeed;
         }
+
         if (Input.GetKey(KeyCode.S))
         {
             // Move Backward
-            mainCamera.transform.Translate(Vector3.back);
+            movement.z -= ResourceManager.ScrollSpeed;
         }
 
+        movement = _mainCamera.transform.TransformDirection(movement);
+        movement.y = 0;
+
+        //calculate desired camera position based on received inputaa
+        Vector3 origin = _mainCamera.transform.position;
+        Vector3 destination = origin;
+        destination.x += movement.x;
+        destination.y += movement.y;
+        destination.z += movement.z;
+
+        //limit away from ground movement to be between a minimum and maximum distance
+        if (destination.y > ResourceManager.MaxCameraHeight)
+        {
+            destination.y = ResourceManager.MaxCameraHeight;
+        }
+        else if (destination.y < ResourceManager.MinCameraHeight)
+        {
+            destination.y = ResourceManager.MinCameraHeight;
+        }
+
+        //if a change in position is detected perform the necessary update
+        if (destination != origin)
+        {
+            _mainCamera.transform.position = Vector3.MoveTowards(origin, destination, Time.deltaTime * ResourceManager.ScrollSpeed);
+        }
     }
-
-
+    
     private void SelectObject()
     {
         if (Input.GetKey(KeyCode.Mouse0))
