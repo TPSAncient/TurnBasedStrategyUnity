@@ -175,6 +175,7 @@ MonoBehaviour:
   Id: 0
   Name: 
   SelectedObjectType: 1
+  IsWorldObjectSelected: 0
 --- !u!1 &604277212
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +555,7 @@ MonoBehaviour:
   Id: 1
   Name: Rome
   SelectedObjectType: 2
+  IsWorldObjectSelected: 0
 --- !u!1 &1321336001
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,8 +654,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e61d073c377b9b943a6943d8ae5325f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  XSensitivity: 10
-  YSensitivity: 10
 --- !u!1 &1710602759
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,3 +742,4 @@ MonoBehaviour:
   Id: 2
   Name: Rome Farm
   SelectedObjectType: 3
+  IsWorldObjectSelected: 0
