@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public enum SelectedObjectType {
+public enum WorldObjectEnum {
     None,
     Terrain,
     City,

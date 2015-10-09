@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
@@ -135,20 +136,45 @@ public class CameraManager : MonoBehaviour
         }
     }
 
+    private readonly List<WorldObject> _selectedWorldObjects = new List<WorldObject>(); 
+
     private void SelectObject()
     {
         if (Input.GetKey(KeyCode.Mouse0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
+
             if (Physics.Raycast(ray, out hit, 100))
             {
-                print("Hit something");
-                SelectedObject selected = hit.transform.GetComponent<SelectedObject>();
-                print(selected.Id);
-                print(selected.Name);
-                print(hit.point);
+                SingleSelection(hit);
             }
         }
+    }
+
+    private void MultipleSelection()
+    {
+        if (!Input.GetKey(KeyCode.LeftControl))
+        {
+            foreach (var selectedWorldObject in _selectedWorldObjects)
+            {
+                selectedWorldObject.IsWorldObjectSelected = false;
+            }
+            _selectedWorldObjects.Clear();
+        }
+
+    }
+
+    private void SingleSelection(RaycastHit hit)
+    {
+        foreach (var selectedWorldObject in _selectedWorldObjects)
+        {
+            selectedWorldObject.IsWorldObjectSelected = false;
+        }
+        _selectedWorldObjects.Clear();
+
+        WorldObject selected = hit.transform.GetComponent<WorldObject>();
+        selected.IsWorldObjectSelected = true;
+        _selectedWorldObjects.Add(selected);
     }
 }

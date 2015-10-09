@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SelectedObject : MonoBehaviour {
+public class WorldObject : MonoBehaviour {
     public int Id = 0;
     public string Name = "";
-    public SelectedObjectType SelectedObjectType = SelectedObjectType.None;
+    public WorldObjectEnum SelectedObjectType = WorldObjectEnum.None;
+    public bool IsWorldObjectSelected = false;
+
 	// Use this for initialization
 	void Start () {
 	
