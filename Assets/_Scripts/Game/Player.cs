@@ -1,10 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
-public class GameManager : MonoBehaviour {
-    public List<Player> Players { get; set; }
-     
+public class Player : MonoBehaviour {
+
+    public bool IsHuman { get; set; }
+
+    // Provinces
+    // Resources
+    // Armys
+
+
 	// Use this for initialization
 	void Start () {
 	
