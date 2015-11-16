@@ -4,19 +4,24 @@
       "Id": 1,
       "Name": "Infra Roma",
       "TagName": "infrastructure_roma",
-      "DataType": "Infrastructure"
+      "DataType": "Infrastructure",
+      "BuildingTag": [
+        "building_road"
+      ]
     },
     "infrastructure_velathri": {
       "Id": 1,
       "Name": "Infra Velathri",
       "TagName": "infrastructure_velathri",
-      "DataType": "Infrastructure"
+      "DataType": "Infrastructure",
+      "BuildingTag": []
     },
     "infrastructure_ariminum": {
       "Id": 1,
       "Name": "Infra Ariminum",
       "TagName": "infrastructure_ariminum",
-      "DataType": "Infrastructure"
+      "DataType": "Infrastructure",
+      "BuildingTag": []
     }
   },
   "DataType": 0

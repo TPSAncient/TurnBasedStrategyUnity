@@ -1,0 +1,15 @@
+{
+  "Data": {
+    "building_road": {
+      "Id": 1,
+      "Name": "Road",
+      "TagName": "building_road",
+      "DataType": "Building",
+      "BuildingType": 8,
+      "IsBuilt": false,
+      "Cost": 100.0,
+      "Maintenance": 10.0
+    }
+  },
+  "DataType": 9
+}

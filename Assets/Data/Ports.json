@@ -4,19 +4,22 @@
       "Id": 1,
       "Name": "Roma port",
       "DataType": "Port",
-      "TagName": "port_roma"
+      "TagName": "port_roma",
+      "BuildingTag": null
     },
     "port_velathri": {
       "Id": 1,
       "Name": "Roma port",
       "DataType": "Port",
-      "TagName": "port_roma"
+      "TagName": "port_roma",
+      "BuildingTag": null
     },
     "port_ariminum": {
       "Id": 1,
       "Name": "Roma port",
       "DataType": "Port",
-      "TagName": "port_roma"
+      "TagName": "port_roma",
+      "BuildingTag": null
     }
   },
   "DataType": 7

@@ -4,19 +4,22 @@
       "Id": 1,
       "Name": "Roma Farm",
       "TagName": "farm_roma",
-      "DataType": "Farm"
+      "DataType": "Farm",
+      "BuildingTag": []
     },
     "farm_velathri": {
       "Id": 2,
       "Name": "Velathri Farm",
       "TagName": "farm_velathri",
-      "DataType": "Farm"
+      "DataType": "Farm",
+      "BuildingTag": []
     },
     "farm_ariminum": {
       "Id": 3,
       "Name": "Ariminum Farm",
       "TagName": "farm_ariminum",
-      "DataType": "Farm"
+      "DataType": "Farm",
+      "BuildingTag": []
     }
   },
   "DataType": 6

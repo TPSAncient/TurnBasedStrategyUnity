@@ -4,19 +4,22 @@
       "Id": 1,
       "Name": "Roma",
       "TagName": "city_roma",
-      "DataType": "City"
+      "DataType": "City",
+      "BuildingTag": []
     },
     "city_velathri": {
       "Id": 2,
       "Name": "Velathri",
       "TagName": "city_velathri",
-      "DataType": "City"
+      "DataType": "City",
+      "BuildingTag": []
     },
     "city_ariminum": {
       "Id": 2,
       "Name": "Ariminum",
       "TagName": "city_ariminum",
-      "DataType": "City"
+      "DataType": "City",
+      "BuildingTag": []
     }
   },
   "DataType": 5

@@ -10,7 +10,7 @@
       "CityTag": "city_roma",
       "FarmTag": "farm_roma",
       "PortTag": "port_roma",
-      "InfrastructureTag": null,
+      "InfrastructureTag": "infrastructure_roma",
       "IndustryTag": null,
       "CanBuildPort": true
     },
@@ -24,7 +24,7 @@
       "CityTag": "city_velathri",
       "FarmTag": "farm_velathri",
       "PortTag": "port_velathri",
-      "InfrastructureTag": null,
+      "InfrastructureTag": "infrastructure_velathri",
       "IndustryTag": null,
       "CanBuildPort": true
     },
@@ -38,7 +38,7 @@
       "CityTag": "city_ariminum",
       "FarmTag": "farm_ariminum",
       "PortTag": "port_ariminum",
-      "InfrastructureTag": null,
+      "InfrastructureTag": "infrastructure_ariminum",
       "IndustryTag": null,
       "CanBuildPort": true
     }
