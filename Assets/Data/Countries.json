@@ -1,0 +1,11 @@
+{
+  "Data": {
+    "country_rome": {
+      "Id": 1,
+      "Name": "Rome",
+      "DataType": "Country",
+      "TagName": "country_rome"
+    }
+  },
+  "DataType": 2
+}

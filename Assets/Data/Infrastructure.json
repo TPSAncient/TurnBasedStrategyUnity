@@ -1,0 +1,23 @@
+{
+  "Data": {
+    "infrastructure_roma": {
+      "Id": 1,
+      "Name": "Infra Roma",
+      "TagName": "infrastructure_roma",
+      "DataType": "Infrastructure"
+    },
+    "infrastructure_velathri": {
+      "Id": 1,
+      "Name": "Infra Velathri",
+      "TagName": "infrastructure_velathri",
+      "DataType": "Infrastructure"
+    },
+    "infrastructure_ariminum": {
+      "Id": 1,
+      "Name": "Infra Ariminum",
+      "TagName": "infrastructure_ariminum",
+      "DataType": "Infrastructure"
+    }
+  },
+  "DataType": 0
+}

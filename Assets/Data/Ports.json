@@ -1,0 +1,23 @@
+{
+  "Data": {
+    "port_roma": {
+      "Id": 1,
+      "Name": "Roma port",
+      "DataType": "Port",
+      "TagName": "port_roma"
+    },
+    "port_velathri": {
+      "Id": 1,
+      "Name": "Roma port",
+      "DataType": "Port",
+      "TagName": "port_roma"
+    },
+    "port_ariminum": {
+      "Id": 1,
+      "Name": "Roma port",
+      "DataType": "Port",
+      "TagName": "port_roma"
+    }
+  },
+  "DataType": 7
+}

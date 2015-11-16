@@ -1,0 +1,23 @@
+{
+  "Data": {
+    "farm_roma": {
+      "Id": 1,
+      "Name": "Roma Farm",
+      "TagName": "farm_roma",
+      "DataType": "Farm"
+    },
+    "farm_velathri": {
+      "Id": 2,
+      "Name": "Velathri Farm",
+      "TagName": "farm_velathri",
+      "DataType": "Farm"
+    },
+    "farm_ariminum": {
+      "Id": 3,
+      "Name": "Ariminum Farm",
+      "TagName": "farm_ariminum",
+      "DataType": "Farm"
+    }
+  },
+  "DataType": 6
+}

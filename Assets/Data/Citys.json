@@ -1,0 +1,23 @@
+{
+  "Data": {
+    "city_roma": {
+      "Id": 1,
+      "Name": "Roma",
+      "TagName": "city_roma",
+      "DataType": "City"
+    },
+    "city_velathri": {
+      "Id": 2,
+      "Name": "Velathri",
+      "TagName": "city_velathri",
+      "DataType": "City"
+    },
+    "city_ariminum": {
+      "Id": 2,
+      "Name": "Ariminum",
+      "TagName": "city_ariminum",
+      "DataType": "City"
+    }
+  },
+  "DataType": 5
+}

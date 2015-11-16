@@ -1,0 +1,47 @@
+{
+  "Data": {
+    "region_roma": {
+      "Id": 1,
+      "Name": null,
+      "DataType": "Region",
+      "TagName": "region_roma",
+      "Player": 1,
+      "ProvinceTag": "province_italia",
+      "CityTag": "city_roma",
+      "FarmTag": "farm_roma",
+      "PortTag": "port_roma",
+      "InfrastructureTag": null,
+      "IndustryTag": null,
+      "CanBuildPort": true
+    },
+    "region_velathria": {
+      "Id": 2,
+      "Name": null,
+      "DataType": "Region",
+      "TagName": "region_velathria",
+      "Player": 1,
+      "ProvinceTag": "province_italia",
+      "CityTag": "city_velathri",
+      "FarmTag": "farm_velathri",
+      "PortTag": "port_velathri",
+      "InfrastructureTag": null,
+      "IndustryTag": null,
+      "CanBuildPort": true
+    },
+    "region_ariminum": {
+      "Id": 3,
+      "Name": null,
+      "DataType": "Region",
+      "TagName": "region_ariminum",
+      "Player": 1,
+      "ProvinceTag": "province_italia",
+      "CityTag": "city_ariminum",
+      "FarmTag": "farm_ariminum",
+      "PortTag": "port_ariminum",
+      "InfrastructureTag": null,
+      "IndustryTag": null,
+      "CanBuildPort": true
+    }
+  },
+  "DataType": 4
+}
