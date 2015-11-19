@@ -1,13 +1,29 @@
 {
   "Data": {
+    "building_path": {
+      "Id": 2,
+      "Name": "Path",
+      "TagName": "building_path",
+      "DataType": "Building",
+      "BuildingType": 8,
+      "Prerequisites": [],
+      "UpgradesFrom": null,
+      "IsBuilt": false,
+      "GoldCost": 100.0,
+      "Maintenance": 10.0
+    },
     "building_road": {
       "Id": 1,
       "Name": "Road",
       "TagName": "building_road",
       "DataType": "Building",
       "BuildingType": 8,
+      "Prerequisites": [
+        "building_path"
+      ],
+      "UpgradesFrom": "building_path",
       "IsBuilt": false,
-      "Cost": 100.0,
+      "GoldCost": 100.0,
       "Maintenance": 10.0
     }
   },

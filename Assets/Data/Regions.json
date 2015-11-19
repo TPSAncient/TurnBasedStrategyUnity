@@ -2,7 +2,7 @@
   "Data": {
     "region_roma": {
       "Id": 1,
-      "Name": null,
+      "Name": "Roma",
       "DataType": "Region",
       "TagName": "region_roma",
       "Player": 1,
@@ -16,7 +16,7 @@
     },
     "region_velathria": {
       "Id": 2,
-      "Name": null,
+      "Name": "Velathri",
       "DataType": "Region",
       "TagName": "region_velathria",
       "Player": 1,
@@ -30,7 +30,7 @@
     },
     "region_ariminum": {
       "Id": 3,
-      "Name": null,
+      "Name": "Ariminum",
       "DataType": "Region",
       "TagName": "region_ariminum",
       "Player": 1,
