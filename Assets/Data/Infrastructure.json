@@ -10,14 +10,14 @@
       ]
     },
     "infrastructure_velathri": {
-      "Id": 1,
+      "Id": 2,
       "Name": "Infra Velathri",
       "TagName": "infrastructure_velathri",
       "DataType": "Infrastructure",
       "BuildingTag": []
     },
     "infrastructure_ariminum": {
-      "Id": 1,
+      "Id": 3,
       "Name": "Infra Ariminum",
       "TagName": "infrastructure_ariminum",
       "DataType": "Infrastructure",
