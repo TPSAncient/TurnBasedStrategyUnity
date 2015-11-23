@@ -5,12 +5,6 @@
       "Name": "Rome",
       "DataType": "Country",
       "TagName": "country_rome"
-    },
-    "country_estonia": {
-      "Id": 2,
-      "Name": "Estonia",
-      "DataType": "Country",
-      "TagName": "country_estonia"
     }
   },
   "DataType": 2
