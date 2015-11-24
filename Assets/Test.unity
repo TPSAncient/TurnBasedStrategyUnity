@@ -115,8 +115,10 @@ MonoBehaviour:
   m_Script: {fileID: -258307864, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tag: city_roma
-  SelectedObjectType: 5
+  _id: 1
+  _name: Roma
+  _tagName: city_roma
+  _dataType: 5
   IsWorldObjectSelected: 0
 --- !u!23 &71680623
 MeshRenderer:
@@ -461,8 +463,10 @@ MonoBehaviour:
   m_Script: {fileID: -258307864, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tag: city_ariminum
-  SelectedObjectType: 5
+  _id: 3
+  _name: Ariminum
+  _tagName: city_ariminum
+  _dataType: 5
   IsWorldObjectSelected: 0
 --- !u!23 &649384592
 MeshRenderer:
@@ -537,8 +541,10 @@ MonoBehaviour:
   m_Script: {fileID: -258307864, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tag: 
-  SelectedObjectType: 1
+  _id: 0
+  _name: Default
+  _tagName: terrain_default
+  _dataType: 1
   IsWorldObjectSelected: 0
 --- !u!23 &703482228
 MeshRenderer:
@@ -944,8 +950,10 @@ MonoBehaviour:
   m_Script: {fileID: -258307864, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tag: city_velathri
-  SelectedObjectType: 5
+  _id: 2
+  _name: Velathri
+  _tagName: city_velathri
+  _dataType: 5
   IsWorldObjectSelected: 0
 --- !u!23 &1053830347
 MeshRenderer:
