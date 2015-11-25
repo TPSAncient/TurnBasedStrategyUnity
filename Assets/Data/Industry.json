@@ -1,0 +1,26 @@
+{
+  "Data": {
+    "industry_roma": {
+      "Id": 1,
+      "Name": "Roma Industry",
+      "TagName": "industry_roma",
+      "DataType": "Industry",
+      "BuildingTag": []
+    },
+    "industry_velathri": {
+      "Id": 2,
+      "Name": "Velathri Industry",
+      "TagName": "industry_velathri",
+      "DataType": "Industry",
+      "BuildingTag": []
+    },
+    "industry_ariminum": {
+      "Id": 3,
+      "Name": "Ariminum Industry",
+      "TagName": "industry_ariminum",
+      "DataType": "Industry",
+      "BuildingTag": []
+    }
+  },
+  "DataType": 12
+}
