@@ -112,7 +112,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 71680621}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -258307864, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
+  m_Script: {fileID: 61130428, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 1
@@ -520,7 +520,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 649384589}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -258307864, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
+  m_Script: {fileID: 61130428, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 3
@@ -599,12 +599,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 703482226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -258307864, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
+  m_Script: {fileID: 61130428, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  _name: Default
-  _tagName: terrain_default
+  _name: 
+  _tagName: 
   _dataType: 1
   IsWorldObjectSelected: 0
   DelayTime: 3
@@ -1230,7 +1230,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1053830344}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -258307864, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
+  m_Script: {fileID: 61130428, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2
@@ -1820,8 +1820,8 @@ MonoBehaviour:
         m_MethodName: BuildBuilding
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1978308396}
-          m_ObjectArgumentAssemblyTypeName: Client.WorldObject, Client
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: Client.Data.UIObject, Client
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1837,12 +1837,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1978308391}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -258307864, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
+  m_Script: {fileID: -1125627686, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 1
   _name: test
   _tagName: 
   _dataType: 0
-  IsWorldObjectSelected: 0
-  DelayTime: 3
+  _tagRegion: 
+  _tagLocation: 
