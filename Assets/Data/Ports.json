@@ -1,26 +1,43 @@
 {
   "Data": {
     "port_roma": {
-      "Id": 1,
-      "Name": "Roma port",
+      "Name": "Roma Port",
       "DataType": "Port",
       "TagName": "port_roma",
       "BuildingTag": null
     },
     "port_velathri": {
-      "Id": 1,
-      "Name": "Roma port",
+      "Name": "Velathri Port",
+      "DataType": "Port",
+      "TagName": "port_velathri",
+      "BuildingTag": null
+    },
+    "port_ariminum": {
+      "Name": "Ariminum Port",
+      "DataType": "Port",
+      "TagName": "port_ariminum",
+      "BuildingTag": null
+    }
+  },
+  "Values": [
+    {
+      "Name": "Roma Port",
       "DataType": "Port",
       "TagName": "port_roma",
       "BuildingTag": null
     },
-    "port_ariminum": {
-      "Id": 1,
-      "Name": "Roma port",
+    {
+      "Name": "Velathri Port",
       "DataType": "Port",
-      "TagName": "port_roma",
+      "TagName": "port_velathri",
+      "BuildingTag": null
+    },
+    {
+      "Name": "Ariminum Port",
+      "DataType": "Port",
+      "TagName": "port_ariminum",
       "BuildingTag": null
     }
-  },
-  "DataType": 7
+  ],
+  "DataType": 0
 }

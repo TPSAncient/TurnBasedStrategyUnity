@@ -1,11 +1,10 @@
 {
   "Data": {
-    "region_roma": {
-      "Id": 1,
-      "Name": "Roma",
+    "port_roma": {
+      "Name": "Roma Port",
       "DataType": "Region",
-      "TagName": "region_roma",
-      "Player": 1,
+      "TagName": "port_roma",
+      "Player": 0,
       "ProvinceTag": "province_italia",
       "CityTag": "city_roma",
       "FarmTag": "farm_roma",
@@ -14,12 +13,11 @@
       "IndustryTag": null,
       "CanBuildPort": true
     },
-    "region_velathria": {
-      "Id": 2,
-      "Name": "Velathri",
+    "port_velathri": {
+      "Name": "Velathri Port",
       "DataType": "Region",
-      "TagName": "region_velathria",
-      "Player": 1,
+      "TagName": "port_velathri",
+      "Player": 0,
       "ProvinceTag": "province_italia",
       "CityTag": "city_velathri",
       "FarmTag": "farm_velathri",
@@ -28,12 +26,11 @@
       "IndustryTag": null,
       "CanBuildPort": true
     },
-    "region_ariminum": {
-      "Id": 3,
-      "Name": "Ariminum",
+    "port_ariminum": {
+      "Name": "Ariminum Port",
       "DataType": "Region",
-      "TagName": "region_ariminum",
-      "Player": 1,
+      "TagName": "port_ariminum",
+      "Player": 0,
       "ProvinceTag": "province_italia",
       "CityTag": "city_ariminum",
       "FarmTag": "farm_ariminum",
@@ -43,5 +40,46 @@
       "CanBuildPort": true
     }
   },
-  "DataType": 4
+  "Values": [
+    {
+      "Name": "Roma Port",
+      "DataType": "Region",
+      "TagName": "port_roma",
+      "Player": 0,
+      "ProvinceTag": "province_italia",
+      "CityTag": "city_roma",
+      "FarmTag": "farm_roma",
+      "PortTag": "port_roma",
+      "InfrastructureTag": "infrastructure_roma",
+      "IndustryTag": null,
+      "CanBuildPort": true
+    },
+    {
+      "Name": "Velathri Port",
+      "DataType": "Region",
+      "TagName": "port_velathri",
+      "Player": 0,
+      "ProvinceTag": "province_italia",
+      "CityTag": "city_velathri",
+      "FarmTag": "farm_velathri",
+      "PortTag": "port_velathri",
+      "InfrastructureTag": "infrastructure_velathri",
+      "IndustryTag": null,
+      "CanBuildPort": true
+    },
+    {
+      "Name": "Ariminum Port",
+      "DataType": "Region",
+      "TagName": "port_ariminum",
+      "Player": 0,
+      "ProvinceTag": "province_italia",
+      "CityTag": "city_ariminum",
+      "FarmTag": "farm_ariminum",
+      "PortTag": "port_ariminum",
+      "InfrastructureTag": "infrastructure_ariminum",
+      "IndustryTag": null,
+      "CanBuildPort": true
+    }
+  ],
+  "DataType": 0
 }

@@ -1,19 +1,18 @@
 {
   "Data": {
     "building_path": {
-      "Id": 1,
       "Name": "Path",
       "TagName": "building_path",
       "DataType": "Building",
       "BuildingType": 8,
       "Prerequisites": [],
+      "Modifiers": [],
       "UpgradesFrom": null,
-      "IsBuilt": false,
-      "GoldCost": 100.0,
-      "Maintenance": 10.0
+      "DefaultGoldCost": 100.0,
+      "DefaultMaintenance": 10.0,
+      "DefaultBuildTime": 2
     },
     "building_road": {
-      "Id": 2,
       "Name": "Road",
       "TagName": "building_road",
       "DataType": "Building",
@@ -21,11 +20,250 @@
       "Prerequisites": [
         "building_path"
       ],
+      "Modifiers": [],
       "UpgradesFrom": "building_path",
-      "IsBuilt": false,
-      "GoldCost": 100.0,
-      "Maintenance": 10.0
+      "DefaultGoldCost": 200.0,
+      "DefaultMaintenance": 20.0,
+      "DefaultBuildTime": 2
+    },
+    "building_pavedroad": {
+      "Name": "Paved Road",
+      "TagName": "building_pavedroad",
+      "DataType": "Building",
+      "BuildingType": 8,
+      "Prerequisites": [
+        "building_path",
+        "building_road"
+      ],
+      "Modifiers": [],
+      "UpgradesFrom": "building_road",
+      "DefaultGoldCost": 400.0,
+      "DefaultMaintenance": 40.0,
+      "DefaultBuildTime": 2
+    },
+    "building_highways": {
+      "Name": "Highways",
+      "TagName": "building_highways",
+      "DataType": "Building",
+      "BuildingType": 8,
+      "Prerequisites": [
+        "building_path",
+        "building_road",
+        "building_pavedroad"
+      ],
+      "Modifiers": [],
+      "UpgradesFrom": "building_pavedroad",
+      "DefaultGoldCost": 800.0,
+      "DefaultMaintenance": 80.0,
+      "DefaultBuildTime": 2
+    },
+    "building_woodenpalisade": {
+      "Name": "Wooden Palisade",
+      "TagName": "building_woodenpalisade",
+      "DataType": "Building",
+      "BuildingType": 4,
+      "Prerequisites": [],
+      "Modifiers": [],
+      "UpgradesFrom": null,
+      "DefaultGoldCost": 100.0,
+      "DefaultMaintenance": 10.0,
+      "DefaultBuildTime": 2
+    },
+    "building_woodenwalls": {
+      "Name": "Wooden Walls",
+      "TagName": "building_woodenwalls",
+      "DataType": "Building",
+      "BuildingType": 4,
+      "Prerequisites": [
+        "building_woodenpalisade"
+      ],
+      "Modifiers": [],
+      "UpgradesFrom": "building_woodenpalisade",
+      "DefaultGoldCost": 200.0,
+      "DefaultMaintenance": 20.0,
+      "DefaultBuildTime": 2
+    },
+    "building_stonewalls": {
+      "Name": "Stone Walls",
+      "TagName": "building_stonewalls",
+      "DataType": "Building",
+      "BuildingType": 4,
+      "Prerequisites": [
+        "building_woodenpalisade",
+        "building_woodenwalls"
+      ],
+      "Modifiers": [],
+      "UpgradesFrom": "building_woodenwalls",
+      "DefaultGoldCost": 400.0,
+      "DefaultMaintenance": 40.0,
+      "DefaultBuildTime": 2
+    },
+    "building_largestonewalls": {
+      "Name": "Large Stone Walls",
+      "TagName": "building_largestonewalls",
+      "DataType": "Building",
+      "BuildingType": 4,
+      "Prerequisites": [
+        "building_woodenpalisade",
+        "building_woodenwalls",
+        "building_stonewalls"
+      ],
+      "Modifiers": [],
+      "UpgradesFrom": "building_stonewalls",
+      "DefaultGoldCost": 800.0,
+      "DefaultMaintenance": 80.0,
+      "DefaultBuildTime": 2
+    },
+    "building_hugestonewalls": {
+      "Name": "Huge Stone Walls",
+      "TagName": "building_hugestonewalls",
+      "DataType": "Building",
+      "BuildingType": 4,
+      "Prerequisites": [
+        "building_woodenpalisade",
+        "building_woodenwalls",
+        "building_stonewalls",
+        "building_largestonewalls"
+      ],
+      "Modifiers": [],
+      "UpgradesFrom": "building_largestonewalls",
+      "DefaultGoldCost": 1500.0,
+      "DefaultMaintenance": 150.0,
+      "DefaultBuildTime": 2
     }
   },
-  "DataType": 9
+  "Values": [
+    {
+      "Name": "Path",
+      "TagName": "building_path",
+      "DataType": "Building",
+      "BuildingType": 8,
+      "Prerequisites": [],
+      "Modifiers": [],
+      "UpgradesFrom": null,
+      "DefaultGoldCost": 100.0,
+      "DefaultMaintenance": 10.0,
+      "DefaultBuildTime": 2
+    },
+    {
+      "Name": "Road",
+      "TagName": "building_road",
+      "DataType": "Building",
+      "BuildingType": 8,
+      "Prerequisites": [
+        "building_path"
+      ],
+      "Modifiers": [],
+      "UpgradesFrom": "building_path",
+      "DefaultGoldCost": 200.0,
+      "DefaultMaintenance": 20.0,
+      "DefaultBuildTime": 2
+    },
+    {
+      "Name": "Paved Road",
+      "TagName": "building_pavedroad",
+      "DataType": "Building",
+      "BuildingType": 8,
+      "Prerequisites": [
+        "building_path",
+        "building_road"
+      ],
+      "Modifiers": [],
+      "UpgradesFrom": "building_road",
+      "DefaultGoldCost": 400.0,
+      "DefaultMaintenance": 40.0,
+      "DefaultBuildTime": 2
+    },
+    {
+      "Name": "Highways",
+      "TagName": "building_highways",
+      "DataType": "Building",
+      "BuildingType": 8,
+      "Prerequisites": [
+        "building_path",
+        "building_road",
+        "building_pavedroad"
+      ],
+      "Modifiers": [],
+      "UpgradesFrom": "building_pavedroad",
+      "DefaultGoldCost": 800.0,
+      "DefaultMaintenance": 80.0,
+      "DefaultBuildTime": 2
+    },
+    {
+      "Name": "Wooden Palisade",
+      "TagName": "building_woodenpalisade",
+      "DataType": "Building",
+      "BuildingType": 4,
+      "Prerequisites": [],
+      "Modifiers": [],
+      "UpgradesFrom": null,
+      "DefaultGoldCost": 100.0,
+      "DefaultMaintenance": 10.0,
+      "DefaultBuildTime": 2
+    },
+    {
+      "Name": "Wooden Walls",
+      "TagName": "building_woodenwalls",
+      "DataType": "Building",
+      "BuildingType": 4,
+      "Prerequisites": [
+        "building_woodenpalisade"
+      ],
+      "Modifiers": [],
+      "UpgradesFrom": "building_woodenpalisade",
+      "DefaultGoldCost": 200.0,
+      "DefaultMaintenance": 20.0,
+      "DefaultBuildTime": 2
+    },
+    {
+      "Name": "Stone Walls",
+      "TagName": "building_stonewalls",
+      "DataType": "Building",
+      "BuildingType": 4,
+      "Prerequisites": [
+        "building_woodenpalisade",
+        "building_woodenwalls"
+      ],
+      "Modifiers": [],
+      "UpgradesFrom": "building_woodenwalls",
+      "DefaultGoldCost": 400.0,
+      "DefaultMaintenance": 40.0,
+      "DefaultBuildTime": 2
+    },
+    {
+      "Name": "Large Stone Walls",
+      "TagName": "building_largestonewalls",
+      "DataType": "Building",
+      "BuildingType": 4,
+      "Prerequisites": [
+        "building_woodenpalisade",
+        "building_woodenwalls",
+        "building_stonewalls"
+      ],
+      "Modifiers": [],
+      "UpgradesFrom": "building_stonewalls",
+      "DefaultGoldCost": 800.0,
+      "DefaultMaintenance": 80.0,
+      "DefaultBuildTime": 2
+    },
+    {
+      "Name": "Huge Stone Walls",
+      "TagName": "building_hugestonewalls",
+      "DataType": "Building",
+      "BuildingType": 4,
+      "Prerequisites": [
+        "building_woodenpalisade",
+        "building_woodenwalls",
+        "building_stonewalls",
+        "building_largestonewalls"
+      ],
+      "Modifiers": [],
+      "UpgradesFrom": "building_largestonewalls",
+      "DefaultGoldCost": 1500.0,
+      "DefaultMaintenance": 150.0,
+      "DefaultBuildTime": 2
+    }
+  ],
+  "DataType": 0
 }
