@@ -5,9 +5,11 @@
       "TagName": "building_path",
       "DataType": "Building",
       "BuildingType": 8,
+      "RequiredEnum": 3,
       "Prerequisites": [],
       "Modifiers": [],
-      "UpgradesFrom": null,
+      "UpgradesFrom": "building_road",
+      "UpgradesTo": null,
       "DefaultGoldCost": 100.0,
       "DefaultMaintenance": 10.0,
       "DefaultBuildTime": 2
@@ -17,11 +19,13 @@
       "TagName": "building_road",
       "DataType": "Building",
       "BuildingType": 8,
+      "RequiredEnum": 3,
       "Prerequisites": [
         "building_path"
       ],
       "Modifiers": [],
-      "UpgradesFrom": "building_path",
+      "UpgradesFrom": "building_pavedroad",
+      "UpgradesTo": null,
       "DefaultGoldCost": 200.0,
       "DefaultMaintenance": 20.0,
       "DefaultBuildTime": 2
@@ -31,12 +35,14 @@
       "TagName": "building_pavedroad",
       "DataType": "Building",
       "BuildingType": 8,
+      "RequiredEnum": 3,
       "Prerequisites": [
         "building_path",
         "building_road"
       ],
       "Modifiers": [],
-      "UpgradesFrom": "building_road",
+      "UpgradesFrom": "",
+      "UpgradesTo": null,
       "DefaultGoldCost": 400.0,
       "DefaultMaintenance": 40.0,
       "DefaultBuildTime": 2
@@ -46,13 +52,15 @@
       "TagName": "building_highways",
       "DataType": "Building",
       "BuildingType": 8,
+      "RequiredEnum": 3,
       "Prerequisites": [
         "building_path",
         "building_road",
         "building_pavedroad"
       ],
       "Modifiers": [],
-      "UpgradesFrom": "building_pavedroad",
+      "UpgradesFrom": "building_highways",
+      "UpgradesTo": null,
       "DefaultGoldCost": 800.0,
       "DefaultMaintenance": 80.0,
       "DefaultBuildTime": 2
@@ -62,9 +70,11 @@
       "TagName": "building_woodenpalisade",
       "DataType": "Building",
       "BuildingType": 4,
+      "RequiredEnum": 0,
       "Prerequisites": [],
       "Modifiers": [],
-      "UpgradesFrom": null,
+      "UpgradesFrom": "building_woodenwalls",
+      "UpgradesTo": null,
       "DefaultGoldCost": 100.0,
       "DefaultMaintenance": 10.0,
       "DefaultBuildTime": 2
@@ -74,11 +84,13 @@
       "TagName": "building_woodenwalls",
       "DataType": "Building",
       "BuildingType": 4,
+      "RequiredEnum": 0,
       "Prerequisites": [
         "building_woodenpalisade"
       ],
       "Modifiers": [],
-      "UpgradesFrom": "building_woodenpalisade",
+      "UpgradesFrom": "building_stonewalls",
+      "UpgradesTo": null,
       "DefaultGoldCost": 200.0,
       "DefaultMaintenance": 20.0,
       "DefaultBuildTime": 2
@@ -88,12 +100,14 @@
       "TagName": "building_stonewalls",
       "DataType": "Building",
       "BuildingType": 4,
+      "RequiredEnum": 0,
       "Prerequisites": [
         "building_woodenpalisade",
         "building_woodenwalls"
       ],
       "Modifiers": [],
-      "UpgradesFrom": "building_woodenwalls",
+      "UpgradesFrom": "building_largestonewalls",
+      "UpgradesTo": null,
       "DefaultGoldCost": 400.0,
       "DefaultMaintenance": 40.0,
       "DefaultBuildTime": 2
@@ -103,13 +117,15 @@
       "TagName": "building_largestonewalls",
       "DataType": "Building",
       "BuildingType": 4,
+      "RequiredEnum": 0,
       "Prerequisites": [
         "building_woodenpalisade",
         "building_woodenwalls",
         "building_stonewalls"
       ],
       "Modifiers": [],
-      "UpgradesFrom": "building_stonewalls",
+      "UpgradesFrom": "building_hugestonewalls",
+      "UpgradesTo": null,
       "DefaultGoldCost": 800.0,
       "DefaultMaintenance": 80.0,
       "DefaultBuildTime": 2
@@ -119,6 +135,7 @@
       "TagName": "building_hugestonewalls",
       "DataType": "Building",
       "BuildingType": 4,
+      "RequiredEnum": 0,
       "Prerequisites": [
         "building_woodenpalisade",
         "building_woodenwalls",
@@ -126,7 +143,8 @@
         "building_largestonewalls"
       ],
       "Modifiers": [],
-      "UpgradesFrom": "building_largestonewalls",
+      "UpgradesFrom": "",
+      "UpgradesTo": null,
       "DefaultGoldCost": 1500.0,
       "DefaultMaintenance": 150.0,
       "DefaultBuildTime": 2

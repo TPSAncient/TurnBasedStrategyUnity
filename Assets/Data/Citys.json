@@ -4,7 +4,9 @@
       "Name": "Roma City",
       "TagName": "city_roma",
       "DataType": "City",
-      "BuildingTag": []
+      "BuildingTag": [
+        "building_woodenpalisade"
+      ]
     },
     "city_velathri": {
       "Name": "Velathri City",
