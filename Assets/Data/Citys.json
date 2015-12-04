@@ -19,25 +19,5 @@
       "BuildingTag": []
     }
   },
-  "Values": [
-    {
-      "Name": "Roma City",
-      "TagName": "city_roma",
-      "DataType": "City",
-      "BuildingTag": []
-    },
-    {
-      "Name": "Velathri City",
-      "TagName": "city_velathri",
-      "DataType": "City",
-      "BuildingTag": []
-    },
-    {
-      "Name": "Ariminum City",
-      "TagName": "city_ariminum",
-      "DataType": "City",
-      "BuildingTag": []
-    }
-  ],
   "DataType": 0
 }

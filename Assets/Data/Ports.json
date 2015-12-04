@@ -19,25 +19,5 @@
       "BuildingTag": null
     }
   },
-  "Values": [
-    {
-      "Name": "Roma Port",
-      "DataType": "Port",
-      "TagName": "port_roma",
-      "BuildingTag": null
-    },
-    {
-      "Name": "Velathri Port",
-      "DataType": "Port",
-      "TagName": "port_velathri",
-      "BuildingTag": null
-    },
-    {
-      "Name": "Ariminum Port",
-      "DataType": "Port",
-      "TagName": "port_ariminum",
-      "BuildingTag": null
-    }
-  ],
   "DataType": 0
 }

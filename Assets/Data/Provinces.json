@@ -6,12 +6,5 @@
       "TagName": "province_italia"
     }
   },
-  "Values": [
-    {
-      "Name": "Italia",
-      "DataType": "Province",
-      "TagName": "province_italia"
-    }
-  ],
   "DataType": 0
 }

@@ -115,10 +115,15 @@ MonoBehaviour:
   m_Script: {fileID: 61130428, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 1
+  GameData:
+    _name: Roma
+    _tagName: city_roma
+    _dataType: 5
+    _tagCountry: country_rome
   _name: Roma
   _tagName: city_roma
   _dataType: 5
+  _tagCountry: country_rome
   IsWorldObjectSelected: 0
   DelayTime: 3
 --- !u!23 &71680623
@@ -278,10 +283,15 @@ MonoBehaviour:
   m_Script: {fileID: 61130428, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 3
+  GameData:
+    _name: Ariminum
+    _tagName: city_ariminum
+    _dataType: 5
+    _tagCountry: country_rome
   _name: Ariminum
   _tagName: city_ariminum
   _dataType: 5
+  _tagCountry: country_ariminum
   IsWorldObjectSelected: 0
   DelayTime: 3
 --- !u!23 &649384592
@@ -357,10 +367,15 @@ MonoBehaviour:
   m_Script: {fileID: 61130428, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 0
+  GameData:
+    _name: 
+    _tagName: 
+    _dataType: 0
+    _tagCountry: 
   _name: 
   _tagName: 
   _dataType: 1
+  _tagCountry: 
   IsWorldObjectSelected: 0
   DelayTime: 3
 --- !u!23 &703482228
@@ -449,8 +464,8 @@ MonoBehaviour:
   m_Script: {fileID: -401551423, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OverViewPanel: {fileID: 0}
-  CityBuilding: {fileID: 0}
+  UIManager: {fileID: 0}
+  SelectionManager: {fileID: 0}
 --- !u!4 &886850790
 Transform:
   m_ObjectHideFlags: 0
@@ -615,10 +630,15 @@ MonoBehaviour:
   m_Script: {fileID: 61130428, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 2
+  GameData:
+    _name: Velathri
+    _tagName: city_velathri
+    _dataType: 5
+    _tagCountry: country_rome
   _name: Velathri
   _tagName: city_velathri
   _dataType: 5
+  _tagCountry: country_velathri
   IsWorldObjectSelected: 0
   DelayTime: 3
 --- !u!23 &1053830347
@@ -664,46 +684,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1053830344}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1787758455
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1787758457}
-  - 114: {fileID: 1787758456}
-  m_Layer: 0
-  m_Name: UIManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1787758456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1787758455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -795684772, guid: 4e21a74a67502e04ba737f964c993cdd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OverViewPanel: {fileID: 0}
-  CityBuilding: {fileID: 0}
-  GameManager: {fileID: 0}
-  TurnView: {fileID: 0}
---- !u!4 &1787758457
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1787758455}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4

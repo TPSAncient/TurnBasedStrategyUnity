@@ -27,33 +27,5 @@
       ]
     }
   },
-  "Values": [
-    {
-      "Name": "Infra Roma",
-      "TagName": "infrastructure_roma",
-      "DataType": "Industry",
-      "BuildingTag": [
-        "building_path",
-        "building_road"
-      ]
-    },
-    {
-      "Name": "Infra Velathri",
-      "TagName": "infrastructure_velathri",
-      "DataType": "Industry",
-      "BuildingTag": [
-        "building_path"
-      ]
-    },
-    {
-      "Name": "Infra Ariminum",
-      "TagName": "infrastructure_ariminum",
-      "DataType": "Industry",
-      "BuildingTag": [
-        "building_path",
-        "building_road"
-      ]
-    }
-  ],
   "DataType": 0
 }

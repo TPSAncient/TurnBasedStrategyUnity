@@ -6,12 +6,5 @@
       "EndedTurn": false
     }
   },
-  "Values": [
-    {
-      "IsPlayer": true,
-      "TagCountry": null,
-      "EndedTurn": false
-    }
-  ],
   "DataType": 0
 }

@@ -6,12 +6,5 @@
       "TagName": "country_rome"
     }
   },
-  "Values": [
-    {
-      "Name": "Rome",
-      "DataType": "Country",
-      "TagName": "country_rome"
-    }
-  ],
   "DataType": 0
 }

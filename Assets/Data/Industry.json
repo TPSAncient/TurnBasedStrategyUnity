@@ -19,25 +19,5 @@
       "BuildingTag": null
     }
   },
-  "Values": [
-    {
-      "Name": "Roma Industry",
-      "TagName": "industry_roma",
-      "DataType": "Industry",
-      "BuildingTag": null
-    },
-    {
-      "Name": "Velathri Industry",
-      "TagName": "industry_velathri",
-      "DataType": "Industry",
-      "BuildingTag": null
-    },
-    {
-      "Name": "Ariminum Industry",
-      "TagName": "industry_ariminum",
-      "DataType": "Industry",
-      "BuildingTag": null
-    }
-  ],
   "DataType": 0
 }
