@@ -8,8 +8,9 @@
       "RequiredEnum": 3,
       "Prerequisites": [],
       "Modifiers": [],
-      "UpgradesFrom": "building_road",
-      "UpgradesTo": null,
+      "BuildingChain": "buildingchain_road",
+      "UpgradesFrom": "",
+      "UpgradesTo": "building_road",
       "DefaultGoldCost": 100.0,
       "DefaultMaintenance": 10.0,
       "DefaultBuildTime": 2
@@ -20,12 +21,11 @@
       "DataType": "Building",
       "BuildingType": 8,
       "RequiredEnum": 3,
-      "Prerequisites": [
-        "building_path"
-      ],
+      "Prerequisites": [],
       "Modifiers": [],
-      "UpgradesFrom": "building_pavedroad",
-      "UpgradesTo": null,
+      "BuildingChain": "buildingchain_road",
+      "UpgradesFrom": "building_path",
+      "UpgradesTo": "building_pavedroad",
       "DefaultGoldCost": 200.0,
       "DefaultMaintenance": 20.0,
       "DefaultBuildTime": 2
@@ -36,13 +36,11 @@
       "DataType": "Building",
       "BuildingType": 8,
       "RequiredEnum": 3,
-      "Prerequisites": [
-        "building_path",
-        "building_road"
-      ],
+      "Prerequisites": [],
       "Modifiers": [],
-      "UpgradesFrom": "",
-      "UpgradesTo": null,
+      "BuildingChain": "buildingchain_road",
+      "UpgradesFrom": "building_road",
+      "UpgradesTo": "building_highways",
       "DefaultGoldCost": 400.0,
       "DefaultMaintenance": 40.0,
       "DefaultBuildTime": 2
@@ -53,14 +51,11 @@
       "DataType": "Building",
       "BuildingType": 8,
       "RequiredEnum": 3,
-      "Prerequisites": [
-        "building_path",
-        "building_road",
-        "building_pavedroad"
-      ],
+      "Prerequisites": [],
       "Modifiers": [],
-      "UpgradesFrom": "building_highways",
-      "UpgradesTo": null,
+      "BuildingChain": "buildingchain_road",
+      "UpgradesFrom": "building_pavedroad",
+      "UpgradesTo": "",
       "DefaultGoldCost": 800.0,
       "DefaultMaintenance": 80.0,
       "DefaultBuildTime": 2
@@ -73,8 +68,9 @@
       "RequiredEnum": 0,
       "Prerequisites": [],
       "Modifiers": [],
-      "UpgradesFrom": "building_woodenwalls",
-      "UpgradesTo": null,
+      "BuildingChain": "buildingchain_wall",
+      "UpgradesFrom": "",
+      "UpgradesTo": "building_woodenwalls",
       "DefaultGoldCost": 100.0,
       "DefaultMaintenance": 10.0,
       "DefaultBuildTime": 2
@@ -85,12 +81,11 @@
       "DataType": "Building",
       "BuildingType": 4,
       "RequiredEnum": 0,
-      "Prerequisites": [
-        "building_woodenpalisade"
-      ],
+      "Prerequisites": [],
       "Modifiers": [],
-      "UpgradesFrom": "building_stonewalls",
-      "UpgradesTo": null,
+      "BuildingChain": "buildingchain_wall",
+      "UpgradesFrom": "building_woodenpalisade",
+      "UpgradesTo": "building_stonewalls",
       "DefaultGoldCost": 200.0,
       "DefaultMaintenance": 20.0,
       "DefaultBuildTime": 2
@@ -101,13 +96,11 @@
       "DataType": "Building",
       "BuildingType": 4,
       "RequiredEnum": 0,
-      "Prerequisites": [
-        "building_woodenpalisade",
-        "building_woodenwalls"
-      ],
+      "Prerequisites": [],
       "Modifiers": [],
-      "UpgradesFrom": "building_largestonewalls",
-      "UpgradesTo": null,
+      "BuildingChain": "buildingchain_wall",
+      "UpgradesFrom": "building_woodenwalls",
+      "UpgradesTo": "building_largestonewalls",
       "DefaultGoldCost": 400.0,
       "DefaultMaintenance": 40.0,
       "DefaultBuildTime": 2
@@ -118,14 +111,11 @@
       "DataType": "Building",
       "BuildingType": 4,
       "RequiredEnum": 0,
-      "Prerequisites": [
-        "building_woodenpalisade",
-        "building_woodenwalls",
-        "building_stonewalls"
-      ],
+      "Prerequisites": [],
       "Modifiers": [],
-      "UpgradesFrom": "building_hugestonewalls",
-      "UpgradesTo": null,
+      "BuildingChain": "buildingchain_wall",
+      "UpgradesFrom": "building_stonewalls",
+      "UpgradesTo": "building_hugestonewalls",
       "DefaultGoldCost": 800.0,
       "DefaultMaintenance": 80.0,
       "DefaultBuildTime": 2
@@ -136,15 +126,11 @@
       "DataType": "Building",
       "BuildingType": 4,
       "RequiredEnum": 0,
-      "Prerequisites": [
-        "building_woodenpalisade",
-        "building_woodenwalls",
-        "building_stonewalls",
-        "building_largestonewalls"
-      ],
+      "Prerequisites": [],
       "Modifiers": [],
-      "UpgradesFrom": "",
-      "UpgradesTo": null,
+      "BuildingChain": "buildingchain_wall",
+      "UpgradesFrom": "building_largestonewalls",
+      "UpgradesTo": "",
       "DefaultGoldCost": 1500.0,
       "DefaultMaintenance": 150.0,
       "DefaultBuildTime": 2
